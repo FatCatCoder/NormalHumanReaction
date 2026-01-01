@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Band Name – EPK</title>
+  <style>
+    :root {
+      --bg: #0b0b0b;
+      --fg: #f2f2f2;
+      --muted: #9a9a9a;
+      --accent: #cfcfcf;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px 80px;
+    }
+
+    /* Header */
+    header {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+      margin-bottom: 64px;
+    }
+
+    .logo {
+      width: 220px;
+      max-width: 100%;
+    }
+
+    .tagline {
+      color: var(--muted);
+      max-width: 600px;
+      font-size: 0.95rem;
+    }
+
+    /* Sections */
+    section {
+      margin-bottom: 72px;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+      color: var(--accent);
+    }
+
+    /* Bio */
+    .bio {
+      max-width: 700px;
+      color: var(--fg);
+    }
+
+    /* Photos */
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .photo1 {
+
+background-image: url('/src/NormalHumanReaction/NHR1.1.Square.png');
+background-size: contain;
+
+
+      background: #151515;
+      aspect-ratio: 4 / 5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+      border: 1px solid #1f1f1f;
+
+    }
+
+.photo2 {
+
+background-image: url('/src/NormalHumanReaction/NHR-Primary Illustration Inverse.jpg');
+background-size: contain;
+
+
+      background: #151515;
+      aspect-ratio: 4 / 5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+      border: 1px solid #1f1f1f;
+
+    }
+
+
+.photo3 {
+
+background-image: url('/src/NormalHumanReaction/NHR-Primary Illustration Inverse.jpg');
+background-size: contain;
+
+
+      background: #151515;
+      aspect-ratio: 4 / 5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+      border: 1px solid #1f1f1f;
+
+    }
+
+    /* Artwork */
+    .artwork {
+      background: #151515;
+	background-image: url('/src/NormalHumanReaction/NHR-Primary Illustration Inverse.jpg');
+background-size: contain;
+      aspect-ratio: 1 / 1;
+      max-width: 420px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      border: 1px solid #1f1f1f;
+    }
+
+    /* Links */
+    .links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      max-width: 600px;
+    }
+
+    .link-item {
+      padding: 14px 16px;
+      border: 1px solid #1f1f1f;
+      background: #121212;
+    }
+
+    footer {
+      margin-top: 80px;
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  object-fit: cover;
+
+  /* iOS Safari fix */
+  max-block-size: -webkit-fill-available;
+}  
+
+/* Contact */
+    .contact {
+      max-width: 420px;
+      padding: 16px 18px;
+      border: 1px solid #1f1f1f;
+      background: #121212;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .contact-email {
+      font-size: 0.9rem;
+      color: var(--accent);
+      word-break: break-all;
+    }
+
+    .copy-btn {
+      background: linear-gradient(180deg, #1a1a1a, #0f0f0f);
+      border: 1px solid #2a2a2a;
+      color: var(--accent);
+      padding: 8px 14px;
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.1s ease;
+    }
+
+    .copy-btn:hover {
+      background: #1f1f1f;
+      border-color: var(--accent);
+      color: var(--fg);
+    }
+
+    .copy-btn:active {
+      transform: translateY(1px);
+    }
+
+    .copy-btn:focus-visible {
+      outline: none;
+      border-color: var(--accent);
+    }
+
+    .copy-btn:hover {
+      color: var(--fg);
+      border-color: var(--accent);
+    }
+
+
+</style>
+
+</head>
+<body>
+  <div class="container">
+    <header>
+      <!-- Replace src with your logo file -->
+      <img src="/src/NormalHumanReaction/NHR-Logo-Horizontal.png" alt="Band Logo" class="logo" />
+      <p class="tagline">
+        Indie / Shoegaze / Alternative. For fans of Radiohead, Hum, Slowdive, and The Strokes.
+      </p>
+    </header>
+
+    <section>
+      <h2>Bio</h2>
+      <p class="bio">
+        Normal Human Reaction is a Sarasota,FL based indie rock project blending dense guitars, spacey atmospheres,
+        and understated melodies. Drawing from 90s shoegaze and early‑2000s alternative,
+        the band focuses on mood, texture, and emotional restraint rather than excess. Crowd focused and preformace driven to draw attention and bring energy with each song.
+      </p>
+    </section>
+
+    <section>
+      <h2>Artwork</h2>
+      <!-- Replace with album or single artwork -->
+      <div class="artwork"> </div>
+    </section>
+
+    <section>
+      <h2>Photos</h2>
+      <div class="photo-grid">
+        <!-- Artist portrait -->
+        <div class="photo1 photo">
+<img src="/src/NormalHumanReaction/NHR1.1.Square.png" alt="Artist portrait">
+</div>
+        <!-- Live photo -->
+        <div class="photo2 photo">
+<img src="/src/NormalHumanReaction/band_live1.jpg" alt="live band photo">
+</div>
+        <!-- Band group photo -->
+        <div class="photo3 photo">Band Photo
+<img src="/src/NormalHumanReaction/DSC_0903.JPG" alt="live band photo">
+</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Links</h2>
+      <div class="links">
+
+        <div class="link-item"><a href="https://soundcloud.com/normal-human-reaction/sets/normal-human-reaction/s-c4GwA49U5aC?si=7437337ca60d4e61a1b4962ade647f55&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing
+">Soundcloud</a></div>
+        <div class="link-item"><a href="https://normalhumanreaction.bandcamp.com/">Bandcamp</a></div>
+        <div class="link-item"><a href="https://www.instagram.com/normalhumanreaction/">Instagram</a></div>
+        <div class="link-item"><a href="https://linktr.ee/normalhumanreaction">Linktr</a></div>
+
+      </div>
+    </section>
+
+<section>
+      <h2>Contact</h2>
+      <div class="contact">
+        <span class="contact-email" id="contactEmail">normalhumanreaction@gmail.com</span>
+        <button class="copy-btn" onclick="copyEmail()">Copy</button>
+      </div>
+    </section>
+
+    <script>
+      function copyEmail() {
+        const email = document.getElementById('contactEmail').innerText;
+        navigator.clipboard.writeText(email).then(() => {
+          const btn = document.querySelector('.copy-btn');
+          btn.innerText = 'Copied';
+          setTimeout(() => (btn.innerText = 'Copy'), 1500);
+        });
+      }
+    </script>
+
+    <footer>
+      © Normal Human Reaction — Electronic Press Kit
+    </footer>
+  </div>
+</body>
+</html>
